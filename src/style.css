@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+html, body{
+    height: 100%;
+    font-family: 'Klee One', cursive;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.header, .footer{
+    background-color: rgba(146, 109, 72, 0.36);
+}
+.home, .menu, .contact{
+    background-color: rgba(146, 109, 72, 0.36)
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./module/image/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+@media screen and (max-height: 999px){
+    .home, .menu, .contact{
+        height:fit-content;
+        width: auto;
+    }  
+}
+
+@media screen and (min-height: 1000px){
+    .home, .menu, .contact{
+        height: fit-content;
+        width: auto;
+    }  
+}
+
+
+@media screen and (min-height: 1300px){
+    .home, .menu, .contact{
+        height: fit-content;
+        width: auto;
+    }  
+}
+@media screen and (min-height: 1500px){
+    .home, .menu, .contact{
+        height: fit-content;
+        width: auto;
+    }  
+}
+
+.nav-bar a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    height: 35px;
+    padding: 0;
+    padding: 0px 16px;
+}
+.nav-bar a:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.active{
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.296);
+    background-color: rgba(255, 255, 255, 0.467);
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(241, 255, 150, 0.255);
+    overflow: hidden;
+    height: 37px;
+    margin-bottom: 1%;
+}
+.home img{
+    width: 400px;
+    height: auto;
+}
+.home p{
+    font-size: 30px;
+}
+.home p:nth-child(1){
+    font-size: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:  inline;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu img{
+    
+    height: 150px;
+    width: auto;
+}
+.menu{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.menu div{
+    background-color: rgba(206, 206, 206, 0.5);
+    border-radius: 15px;
+    margin: 10%;
+}
+.food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+.contact img{
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contact a{
+    margin-bottom: 5%;
+}
